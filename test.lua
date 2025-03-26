@@ -34,7 +34,7 @@ end)
 local bit = require "bit"
 local currantstate = 1
 local should_swap = 0
-_DEBUG = true
+_DEBUG = false
 
 local bit = require "bit"
 
