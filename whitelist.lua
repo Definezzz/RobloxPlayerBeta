@@ -24,7 +24,7 @@ for _, id in ipairs(whitelist) do
         break
     end
 end
-
+print("Checking if HWID Exist...")
 if isWhitelisted then
     local link = "https://raw.githubusercontent.com/Definezzz/RobloxPlayerBeta/refs/heads/main/erased.lua"
     http.get(link, function(success, response)
