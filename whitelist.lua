@@ -1,7 +1,7 @@
 local base64 = require("gamesense/base64")
 local http = require('gamesense/http')
 
-local whitelist = {"1742785323"}
+local whitelist = {"1742785323", "1701963817"}
 local ffi = require("ffi")
 
 local function getObfuscatedHWID()
