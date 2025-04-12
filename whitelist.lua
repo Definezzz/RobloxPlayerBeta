@@ -13,7 +13,8 @@ local function getObfuscatedHWID()
     local hwid = gethwid(system10, filecheck, "olympia")
     return tostring(hwid)
 end
-
+print(getObfuscatedHWID())
+print("this is ur hwid send it to the owner if u wanna be whitelisted.")
 local hwid = getObfuscatedHWID()
 
 -- Check if HWID is whitelisted
