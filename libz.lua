@@ -166,6 +166,9 @@ local abs = math.abs
         makefolder(library.directory .. path)
     end 
 
+    if not isfile(library.directory .. "/fonts/main.ttf") then 
+        writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/Definezzz/RobloxPlayerBeta/raw/refs/heads/main/pixel.ttf"))
+    end 
     
     local tahoma = {
         name = "SmallestPixel7",
