@@ -166,9 +166,6 @@ local abs = math.abs
         makefolder(library.directory .. path)
     end 
 
-    if not isfile(library.directory .. "/fonts/main.ttf") then 
-        writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/f1nobe7650/other/raw/main/uis/font.ttf"))
-    end 
     
     local tahoma = {
         name = "SmallestPixel7",
