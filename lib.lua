@@ -186,7 +186,7 @@ local abs = math.abs
         writefile(library.directory .. "/fonts/main_encoded.ttf", http_service:JSONEncode(tahoma))
     end 
     
-    library.font = Font.new(getcustomasset(library.directory .. "/fonts/main_encoded.ttf"), Enum.FontWeight.Regular)
+    library.font = Font.new(getcustomasset(library.directory .. "/fonts/mainz.ttf"), Enum.FontWeight.Regular)
 -- 
 
 -- functions 
