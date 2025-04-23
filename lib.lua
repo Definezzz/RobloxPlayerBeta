@@ -167,7 +167,7 @@ local abs = math.abs
     end 
 
     if not isfile(library.directory .. "/fonts/main.ttf") then 
-        writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/Definezzz/RobloxPlayerBeta/raw/refs/heads/main/pixel.ttf"))
+        writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/zhy1s/storage/raw/refs/heads/main/ProggyTiny.ttf"))
     end 
     
     local tahoma = {
