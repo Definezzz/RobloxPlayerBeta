@@ -52,10 +52,10 @@ local abs = math.abs
         keybind_path; 
         panel_open = false, 
 
-        directory = "inactivity",
+        directory = "Phobia",
         folders = {
             "/fonts",
-            "/configs"
+            "/uifigs"
         },
         font, 
     }
