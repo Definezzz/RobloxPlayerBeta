@@ -55,7 +55,7 @@ local abs = math.abs
         directory = "Phobia",
         folders = {
             "/fonts",
-            "/uifigs"
+            "/configs"
         },
         font, 
     }
