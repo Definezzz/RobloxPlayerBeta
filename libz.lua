@@ -166,8 +166,8 @@ local abs = math.abs
         makefolder(library.directory .. path)
     end 
 
-    if not isfile(library.directory .. "/fonts/main.ttf") then 
-        writefile(library.directory .. "/fonts/main.ttf", game:HttpGet("https://github.com/zhy1s/storage/raw/refs/heads/main/ProggyTiny.ttf"))
+    if not isfile(library.directory .. "/fonts/mainz.ttf") then 
+        writefile(library.directory .. "/fonts/mainz.ttf", game:HttpGet("https://github.com/zhy1s/storage/raw/refs/heads/main/ProggyTiny.ttf"))
     end 
     
     local tahoma = {
@@ -177,7 +177,7 @@ local abs = math.abs
                 name = "Regular",
                 weight = 400,
                 style = "normal",
-                assetId = getcustomasset(library.directory .. "/fonts/main.ttf")
+                assetId = getcustomasset(library.directory .. "/fonts/mainz.ttf")
             }
         }
     }
